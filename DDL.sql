@@ -53,8 +53,8 @@ create table tra_trabalho (
 );
 
 
-insert into tra_trabalho (tra_titulo, tra_data_hora_entrega,tra_descricao,tra_grupo,tra_nota,tra_justificativa) values ('Teste 1', current_timestamp(),'Alpha', 6,'Bom, mas falta conteúdo')
-insert into tra_trabalho (tra_titulo, tra_data_hora_entrega,tra_descricao,tra_grupo,tra_nota,tra_justificativa) values ('Teste 2', current_timestamp(),'Beta', 3,'Incompleto')
+insert into tra_trabalho (tra_titulo,tra_data_hora_entrega,tra_descricao,tra_grupo,tra_nota,tra_justificativa) values ('Teste 1','2023-08-01 19:10','desc1','Alpha', 6,'Bom, mas falta conteúdo');
+insert into tra_trabalho (tra_titulo,tra_data_hora_entrega,tra_descricao,tra_grupo,tra_nota,tra_justificativa) values ('Teste 2','2023-08-01 19:10','desc2','Beta', 3,'Incompleto');
 insert into usr_usuario (usr_nome, usr_senha)
   values ('admin', '$2a$10$i3.Z8Yv1Fwl0I5SNjdCGkOTRGQjGvHjh/gMZhdc3e7LIovAklqM6C');
 insert into aut_autorizacao (aut_nome)
