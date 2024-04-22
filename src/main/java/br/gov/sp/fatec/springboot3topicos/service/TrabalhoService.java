@@ -9,13 +9,14 @@ import org.springframework.stereotype.Service;
 import br.gov.sp.fatec.springboot3topicos.entity.Trabalho;
 import br.gov.sp.fatec.springboot3topicos.repository.TrabalhoRepository;
 
-@Service
+@Service // nao esquecer do @service
 public class TrabalhoService {
-    @Autowired
+
+    @Autowired // serve para instaciar a classe TrabalhoRepository
     private TrabalhoRepository trabalhoRepo;
 
-    
     public Trabalho cadastrarTrabalho(Trabalho trabalho) {
+
         return trabalhoRepo.save(trabalho);
     }
 

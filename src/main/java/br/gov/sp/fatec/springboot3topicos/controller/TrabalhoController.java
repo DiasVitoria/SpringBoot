@@ -29,9 +29,10 @@ public class TrabalhoController {
     }
 
     @PostMapping
-    public Trabalho insert(@RequestBody Trabalho data){
-        return service.cadastrarTrabalho(data);
+    public Trabalho insert(@RequestBody Trabalho trabalho){
+        return service.cadastrarTrabalho(trabalho);
     }
+    
     @GetMapping(value = "/{id}")
     public Optional<Trabalho> getById(@PathVariable("id") Long id){
         return service.buscarTrabalhoPorId(id);
